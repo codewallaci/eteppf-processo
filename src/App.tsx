@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Footer from "./components/Footer";
 import Soon from "./pages/Soon";
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
   return (
     <>
       <Soon />
+      <Footer />
     </>
   );
 }
