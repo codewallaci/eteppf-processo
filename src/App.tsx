@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Soon from "./pages/soon";
+import Soon from "./pages/Soon";
 
 function App() {
   const [count, setCount] = useState(0);
