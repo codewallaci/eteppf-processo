@@ -25,10 +25,10 @@ const CarouselComp = () => {
   ];
 
   return (
-    <div className="h-[250px] w-full mb-12 mt-12 flex justify-center items-center px-4">
+    <div className="h-[250px] w-full mb-12 mt-12 flex justify-center items-center">
       <Carousel
         breakPoints={breakPoints}
-        showArrows={true}
+        showArrows={false}
         enableAutoPlay={true}
         autoPlaySpeed={8200}
         disableArrowsOnEnd={true}
