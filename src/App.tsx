@@ -1,4 +1,5 @@
 import { useState } from "react";
+import CarouselComp from "./components/CarouselComp";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import { Navbar } from "./components/Navbar";
@@ -11,6 +12,7 @@ function App() {
   return (
     <>
       <Navbar />
+      <CarouselComp />
       <Hero />
       <Tutorial />
       <Footer />

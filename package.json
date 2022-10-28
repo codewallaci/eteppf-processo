@@ -10,12 +10,15 @@
   },
   "dependencies": {
     "@types/react-scroll": "^1.8.4",
+    "@types/styled-components": "^5.1.26",
     "phosphor-react": "^1.4.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-elastic-carousel": "^0.11.5",
     "react-icons": "^4.6.0",
     "react-scroll": "^1.8.8",
-    "react-typed": "^1.2.0"
+    "react-typed": "^1.2.0",
+    "styled-components": "^5.3.6"
   },
   "devDependencies": {
     "@types/react": "^18.0.17",

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { Link } from "react-scroll";
+import Logo from "../assets/logobranca.png";
 
 export const Navbar = () => {
   const [nav, setNav] = useState(true);
@@ -12,10 +13,8 @@ export const Navbar = () => {
   return (
     <div id="inscricao">
       <div className="flex justify-between items-center h-20 w-full px-4 text-white bg-blue-900">
-        <h1 className="w-full text-3xl font-bold text-zinc-100 px-8">
-          ETE PPF
-        </h1>
-        <ul className="hidden md:flex items-center">
+        <img className="w-[100px] ml-6" src={Logo} alt="LOGO ETE" />
+        <ul className="hidden md:flex items-center mr-6 ">
           <Link to="inscricao" spy={true} smooth={true}>
             <button className="w-[110px] my-6 mx-auto py-2 bg-white text-blue-900 font-bold rounded-lg hover:bg-zinc-100 transition-colors">
               Inscrição
@@ -28,7 +27,7 @@ export const Navbar = () => {
           </Link>
 
           <Link to="contact" spy={true} smooth={true}>
-            <li className="p-4 cursor-pointer  hover:text-zinc-100 transition-colors">
+            <li className="p-4  cursor-pointer  hover:text-zinc-100 transition-colors">
               Cronograma
             </li>
           </Link>
@@ -43,9 +42,12 @@ export const Navbar = () => {
               : "fixed left-[-100%]"
           }
         >
-          <h1 className="w-full text-3xl font-bold text-zinc-100 mt-8 ml-4">
-            ETE PPF
-          </h1>
+          <img
+            className="w-[100px] ml-[40px] mt-[11px]"
+            src={Logo}
+            alt="LOGO ETE"
+          />
+
           <ul className="p-4 uppercase ">
             <Link activeClass="active" to="home" spy={true} smooth={true}>
               <Link
