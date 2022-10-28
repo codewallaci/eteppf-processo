@@ -25,13 +25,14 @@ const CarouselComp = () => {
   ];
 
   return (
-    <div className="h-[250px] w-full mb-2 mt-12 flex justify-center items-center">
+    <div className="z-0 h-[250px] w-full mb-2 mt-12 flex justify-center items-center">
       <Carousel
         breakPoints={breakPoints}
         showArrows={false}
         enableAutoPlay={true}
         autoPlaySpeed={8200}
         disableArrowsOnEnd={true}
+        autoTabIndexVisibleItems={true}
       >
         <Item>
           <img src={um} alt="1" />

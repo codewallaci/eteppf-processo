@@ -12,7 +12,7 @@ export const Navbar = () => {
 
   return (
     <div id="inscricao">
-      <div className="flex justify-between items-center h-20 w-full px-4 text-white bg-blue-900">
+      <div className="z-40 flex justify-between items-center h-20 w-full px-4 text-white bg-blue-900">
         <img className="w-[100px] ml-6" src={Logo} alt="LOGO ETE" />
         <ul className="hidden md:flex items-center mr-6 ">
           <Link to="inscricao" spy={true} smooth={true}>
@@ -33,7 +33,11 @@ export const Navbar = () => {
           </Link>
         </ul>
         <div onClick={handleNav} className="block md:hidden">
-          {!nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
+          {!nav ? (
+            <AiOutlineClose className="hidden" size={20} />
+          ) : (
+            <AiOutlineMenu className="hidden" size={20} />
+          )}
         </div>
         <div
           className={

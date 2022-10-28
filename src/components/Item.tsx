@@ -8,4 +8,5 @@ export default styled.div`
   width: 100%;
   color: #fff;
   font-size: 4em;
+  z-index: 0;
 `;
