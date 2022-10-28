@@ -50,10 +50,10 @@ const Hero = () => {
 
   return (
     <div className="mt-[-96px] w-full h-screen max-auto text-center flex flex-col justify-center items-center">
-      <img className=" max-w-sm mt-20" src={Processo} alt="Processo Seletivo" />
+      <img className=" max-w-sm mt-24" src={Processo} alt="Processo Seletivo" />
 
       <Typed
-        className="text-6xl text-blue-900 font-bold "
+        className="text-5xl text-blue-900 font-bold "
         strings={["2023", "#VEMSERETE"]}
         typeSpeed={250}
         backSpeed={100}
@@ -62,7 +62,7 @@ const Hero = () => {
       <Link to="pagina" spy={true} smooth={true}>
         <ArrowCircleDown
           id="pagina"
-          className="w-12 h-12 mt-5 animate-bounce text-blue-700"
+          className="w-12 h-12 mt-5 mb-2 animate-bounce text-blue-700"
         />
       </Link>
       <div className="w-[700px] fle flex-col max-w-sm h-[150px] md:max-w-lg hover:bg-blue-800 transition-colors duration-500 hover:cursor-progress shadow-lg shadow-blue-500 bg-blue-900 mt-6 justify-center items-center flex rounded-md mb-6">

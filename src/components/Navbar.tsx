@@ -13,10 +13,14 @@ export const Navbar = () => {
   return (
     <div id="inscricao">
       <div className="z-40 flex justify-between items-center h-20 w-full px-4 text-white bg-blue-900">
-        <img className="w-[100px] ml-6" src={Logo} alt="LOGO ETE" />
-        <ul className="show flex items-center mr-0 md:mr-6 ">
+        <img
+          className="w-[80px] md:w-[100px] ml-1 md:ml-6"
+          src={Logo}
+          alt="LOGO ETE"
+        />
+        <ul className="show flex items-center mr-3 md:mr-6 ">
           <Link to="inscricao" spy={true} smooth={true}>
-            <button className="w-[110px] my-6 mx-auto py-2 bg-white text-blue-900 font-bold rounded-lg hover:bg-zinc-100 transition-colors">
+            <button className="w-[80px] md:w-[110px] my-6 mx-auto py-2 bg-white text-blue-900 font-bold rounded-lg hover:bg-zinc-100 transition-colors">
               Inscrição
             </button>
           </Link>
