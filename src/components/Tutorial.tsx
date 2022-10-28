@@ -5,7 +5,7 @@ class Tutorial extends Component {
     return (
       <div id="tutorial">
         <div className="text-center bg-blue-900 flex flex-col justify-center items-center">
-          <h1 className="text-white text-2xl w-[450px] mt-12">
+          <h1 className="text-white text-2xl w-[350px] md:w-[450px] mt-12">
             Assista o tutorial do passo a passo para realizar a inscrição no
             processo seletivo ⬇️
           </h1>
