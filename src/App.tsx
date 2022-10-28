@@ -1,5 +1,8 @@
 import { useState } from "react";
 import Footer from "./components/Footer";
+import Hero from "./components/Hero";
+import { Navbar } from "./components/Navbar";
+import Tutorial from "./components/Tutorial";
 import Soon from "./pages/Soon";
 
 function App() {
@@ -7,7 +10,9 @@ function App() {
 
   return (
     <>
-      <Soon />
+      <Navbar />
+      <Hero />
+      <Tutorial />
       <Footer />
     </>
   );
