@@ -1,5 +1,5 @@
 import React, { Component, useEffect, useState } from "react";
-import Processo from "../assets/Processo.png";
+import Processo from "../assets/processo.png";
 import { CheckSquare, TelegramLogo } from "phosphor-react";
 import Clock from "./Clock";
 import Typed from "react-typed";
