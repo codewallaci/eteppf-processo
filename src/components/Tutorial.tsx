@@ -14,7 +14,7 @@ class Tutorial extends Component {
             processo seletivo ⬇️
           </h1>
           <div className="w-[900px] max-w-sm max-h-52 h-[350px] md:max-h-[350px] md:max-w-2xl  justify-center items-center flex rounded-md mb-24 mt-12">
-            <Video>
+            <Video playsInline>
               <source src={tutorialVideo} type="video/webm" />
             </Video>
           </div>
