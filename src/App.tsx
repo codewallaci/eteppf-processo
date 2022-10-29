@@ -1,5 +1,6 @@
 import { useState } from "react";
 import CarouselComp from "./components/CarouselComp";
+import Cursos from "./components/Cursos";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import { Navbar } from "./components/Navbar";
@@ -15,6 +16,7 @@ function App() {
       <CarouselComp />
       <Hero />
       <Tutorial />
+      <Cursos />
       <Footer />
     </>
   );
