@@ -3,8 +3,9 @@ import redes from "../assets/redes.jpg";
 
 const Cursos = () => {
   return (
-    <div className="flex w-full justify-center items-center">
-      <div className="w-full justify-center mx-auto grid md:grid-cols-2 ml-2 md:ml-10">
+    <div className="flex w-full justify-center items-center flex-col">
+      <h1 className="mt-8 text-2xl font-bold">Cursos disponíveis:</h1>
+      <div className="w-full justify-center mx-auto grid md:grid-cols-2 gap-48 place-items-cente ml-2 md:ml-10">
         <div className="p-10">
           <div className="max-w-sm h-[520px] rounded overflow-hidden shadow-lg  hover:shadow-blue-500 transition-all duration-300 border-[1px] border-blue-900">
             <img className="w-full" src={adm} alt="Administração" />

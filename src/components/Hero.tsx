@@ -77,13 +77,15 @@ const Hero = () => {
         />
       </div>
       <div>
-        <button
-          disabled={true}
-          className="cursor-not-allowed bg-[#0F172A] border-2 border-blue-900 hover:bg-[#192950] transition-colors text-yellow-500 h-[60px] w-[380px] rounded-md mt-3 flex items-center justify-center flex-row gap-2"
-        >
-          <CheckSquare className="" />
-          <h1>Fazer inscrição agora</h1>
-        </button>
+        <a href="https://sisacad.educacao.pe.gov.br/sissel/index.php?pag=3P">
+          <button
+            disabled={true}
+            className=" bg-[#0F172A] cursor-pointer border-2 border-blue-900 hover:bg-[#192950] transition-colors text-yellow-500 h-[60px] w-[380px] rounded-md mt-3 flex items-center justify-center flex-row gap-2"
+          >
+            <CheckSquare className="" />
+            <h1>Fazer inscrição agora</h1>
+          </button>
+        </a>
         <a href="https://t.me/+uiZA2rGPggYwNTZh">
           <button className="bg-[#0088CC] mb-5  hover:bg-cyan-700 border-2 border-blue-300 transition-colors text-white h-[60px] w-[380px] rounded-md mt-3 flex items-center justify-center flex-row gap-2">
             <TelegramLogo className="" />
