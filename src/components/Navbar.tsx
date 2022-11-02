@@ -25,16 +25,15 @@ export const Navbar = () => {
             </button>
           </Link>
           <Link to="tutorial" spy={true} smooth={true}>
-            <li className="p-2 md:p-4 cursor-pointer md hover:text-zinc-100 transition-colors">
+            <li className="p-2 md:p-4 cursor-pointer md hover:text-zinc-200 transition-colors">
               Tutorial
             </li>
           </Link>
-
-          <Link to="contact" spy={true} smooth={true}>
-            <li className="p-2 md:p-4  cursor-pointer  hover:text-zinc-100 transition-colors">
-              Cronograma
+          <a href="https://sisacad.educacao.pe.gov.br/sissel/link.php?id=727">
+            <li className="p-2 md:p-4  cursor-pointer  hover:text-zinc-200 transition-colors">
+              Edital
             </li>
-          </Link>
+          </a>
         </ul>
       </div>
     </div>
