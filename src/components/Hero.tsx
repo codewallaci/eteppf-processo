@@ -10,6 +10,7 @@ const Hero = () => {
   const [timerHours, setTimerHours] = useState<any>();
   const [timerMinutes, setTimerMinutes] = useState<any>();
   const [timerSeconds, setTimerSeconds] = useState<any>();
+  const [aberto, setAberto] = useState<boolean>();
 
   let interval: any;
 
@@ -28,11 +29,13 @@ const Hero = () => {
 
       if (distance < 0) {
         //Parar o contador
-
+        setAberto(false);
+        console.log(aberto);
         clearInterval(interval.current);
       } else {
         //Atualizar o contador
-
+        console.log(aberto);
+        setAberto(true);
         setTimerDays(days);
 
         setTimerHours(hours);
@@ -66,9 +69,6 @@ const Hero = () => {
         />
       </Link>
       <div className="w-[700px] fle flex-col max-w-sm h-[150px] md:max-w-lg hover:bg-blue-800 transition-colors duration-500 hover:cursor-progress shadow-lg shadow-blue-500 bg-blue-900 mt-6 justify-center items-center flex rounded-md mb-6">
-        <h1 className=" animate-pulse font-bold text-zinc-100 mb-1">
-          ⏳ TEMPO RESTANTE PARA REALIZAR A INSCRIÇÃO:
-        </h1>
         <Clock
           timerDays={timerDays}
           timerHours={timerHours}
@@ -77,15 +77,18 @@ const Hero = () => {
         />
       </div>
       <div>
-        <a href="https://sisacad.educacao.pe.gov.br/sissel/index.php?pag=3P">
-          <button
-            disabled={true}
-            className=" bg-[#0F172A] cursor-pointer border-2 border-blue-900 hover:bg-[#192950] transition-colors text-yellow-500 h-[60px] w-[380px] rounded-md mt-3 flex items-center justify-center flex-row gap-2"
-          >
-            <CheckSquare className="" />
-            <h1>Fazer inscrição agora</h1>
+        {aberto ? (
+          <a href="https://sisacad.educacao.pe.gov.br/sissel/index.php?pag=3P">
+            <button className=" bg-[#0F172A] cursor-pointer border-2 border-blue-900 hover:bg-[#192950] transition-colors text-yellow-500 h-[60px] w-[380px] rounded-md mt-3 flex items-center justify-center flex-row gap-2">
+              <CheckSquare className="" />
+              <h1>Fazer inscrição agora</h1>
+            </button>
+          </a>
+        ) : (
+          <button className=" bg-red-600 border-2 cursor-not-allowed transition-colors text-white h-[60px] w-[380px] rounded-md mt-3 flex items-center justify-center flex-row gap-2">
+            <h1 className="font-bold">INSCRIÇÕES ENCERRADAS!</h1>
           </button>
-        </a>
+        )}
         <a href="https://t.me/+uiZA2rGPggYwNTZh">
           <button className="bg-[#0088CC] mb-5  hover:bg-cyan-700 border-2 border-blue-300 transition-colors text-white h-[60px] w-[380px] rounded-md mt-3 flex items-center justify-center flex-row gap-2">
             <TelegramLogo className="" />
